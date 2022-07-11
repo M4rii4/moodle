@@ -15879,7 +15879,7 @@ a.ygtvspacer:hover {
 .fitem.disabled .fm-empty-container {
   display: none; }
 
-.dndupload-progressbars {
+.dndupload-progressbars, .fpupload-progressbars {
   padding: 10px;
   display: none; }
 
@@ -15896,6 +15896,12 @@ a.ygtvspacer:hover {
   display: none; }
 
 .filepicker-filelist.dndupload-inprogress a {
+  display: none; }
+
+.fpupload-progressbars.fpupload-inprogress {
+  display: block; }
+
+.fpupload-progressbars.fpupload-inprogress + .fm-empty-container {
   display: none; }
 
 .filemanager.fp-select .fp-select-loading {
