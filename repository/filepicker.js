@@ -658,7 +658,9 @@ M.core_filepicker.init = function(Y, options) {
                     formdata.append(i, args['params'][i]);
                 }
             }
-            const datastring = [...formdata.entries()].map(x => `${encodeURIComponent(x[0])}=${encodeURIComponent(x[1])}`).join('&');
+            const datastring = [...formdata.entries()].map(
+                (x) => `${encodeURIComponent(x[0])}=${encodeURIComponent(x[1])}`
+            ).join("&");
             const xhr = new XMLHttpRequest();
             // Update the progress bar.
             xhr.upload.addEventListener('progress', function (e) {
